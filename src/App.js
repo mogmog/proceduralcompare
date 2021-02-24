@@ -1,6 +1,3 @@
-import './App.css';
-import CarouselAxisExample from './components/CarouselAxis/CarouselAxisExample';
-
 import Procedural from './components/Procedural';
 import ESRI from './components/ESRI';
 
@@ -16,7 +13,9 @@ function App() {
   return (
     <div className="App">
 
-        <button onClick={() => setLocation({
+        <button
+            className={'btn'}
+            onClick={() => setLocation({
             esri :          { position : location.esri.position,        heading: 35 },
             procedural :    { ...location.procedural,  bearing: 35 },
         })}> Rotate Camera </button>
